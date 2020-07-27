@@ -1,0 +1,7 @@
+<form (ngSubmit)="verificar()">
+  <label for="cuit">Cuit a verificar</label>
+  <input type="text" name="cuit" placeholder="xx-xxxxxxxx-x" [(ngModel)]="cuit">
+  <button type="submit">Verificar</button>
+</form>
+<h2>{{mensaje}}</h2>
+
