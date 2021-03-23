@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700&display=swap');
 
 body {
-  background-color: #070707;
-  font-family: 'MuseoModerno', cursive;
-  color: white;
-
+  background-color: #FDFCDC;
+  font-family: 'Recursive', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex-block;
+  padding: 10px;
 }

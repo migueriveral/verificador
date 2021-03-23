@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  url: "https://stormy-tor-26129.herokuapp.com/"
+
 };

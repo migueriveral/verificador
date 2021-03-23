@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 
 @Injectable({
@@ -7,15 +8,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CuitService {
 
-  url = "https://stormy-tor-26129.herokuapp.com/";
+  url = environment.url + "cuit/";
 
   constructor(private http: HttpClient) { }
 
   async verificarCuit(cuit){
     try{
+      var paquete = {
+        cuit: cuit
+      }
       var respuesta;
 
-      respuesta = await this.http.post(this.url+"cuit/", cuit, {responseType: "text"}).toPromise();
+      respuesta = await this.http.post(this.url, paquete, {responseType: "text"}).toPromise();
 
       return respuesta;
      }
